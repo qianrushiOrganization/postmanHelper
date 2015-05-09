@@ -1,0 +1,20 @@
+{ 
+	"name": "postman协作插件",//插件的名称
+	"version": "2",//插件版本
+	"manifest_version": 2,
+	"description": "postman 接口协作插件",//描述信息，会显示在插件属性里 
+	"icons":{
+		"16":"16.png",
+		"48":"48.png",
+		"128":"128.png"
+	}, //指定 16,48,128 像素大小的图标的路径
+	//"default_locale": "zh_CN",//默认编码为中文
+	"browser_action": {
+		"default_icon": "16.png",//指定插件图标的路径
+		"default_popup": "index.html",//指定 index.html 文件的路径
+		"default_title": "postman协作插件"
+	}, 
+	//"background_page": "index.html",
+	"permissions": ["http://*/","bookmarks","tabs","history"]//此权限支持向 http://*/ 发送 Ajax 请求,读取标签（tab）中的信息
+
+}
